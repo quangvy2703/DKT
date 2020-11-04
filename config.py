@@ -25,7 +25,7 @@ def str2bool(v):
 
 
 def get_args():
-    params = parser.parse_args()
+    params = parser.parse_known_args()
     params.run_script = get_run_script()
 
     if params.gpu != 'none':
